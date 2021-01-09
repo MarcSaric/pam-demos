@@ -6,10 +6,10 @@ Changes (c) 2021 Marc Saric
 
 All the details are in "Entspannt entsperrt, Linux-Authentifizierung mit mehr Komfort", c't 10/2019 Seite 132ff
 
-Further ideas (globaly enable U2F even with encrypted home dirs), see
+Further ideas (globally enable U2F even with encrypted home dirs), see
 https://askubuntu.com/questions/1071027/how-to-configure-a-u2f-keysuch-as-a-yubikey-for-system-wide-2-factor-authentic
 
-This are PAM configuration files for demonstration purposes. They always allow authentication with your Linux system password as a last resort.
+These are PAM configuration files for demonstration purposes. They always allow authentication with your Linux system password as a last resort.
 
 ## Globally enable U2F for login
 
