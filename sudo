@@ -1,0 +1,10 @@
+#%PAM-1.0
+
+session    required   pam_env.so readenv=1 user_readenv=0
+session    required   pam_env.so readenv=1 envfile=/etc/default/locale user_readenv=0
+# For testing purposes, this can be enabled. Otherwise see common-auth.
+#@include inc-u2f-pw
+# U2F is enabled as in inc-u2d-pw by default now, see there.
+@include common-auth
+@include common-account
+@include common-session-noninteractive

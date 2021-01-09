@@ -2,7 +2,7 @@
 ##    U2F-Token / Passwort  ##
 
 # erst: U2F-Token
-auth	[success=2 default=ignore] 	pam_u2f.so 
+auth	[success=2 default=ignore] 	pam_u2f.so authfile=/etc/u2f_keys
 
 
 # Fallback -- funktioniert immer: Passwort
