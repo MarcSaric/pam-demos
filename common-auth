@@ -15,7 +15,7 @@
 
 # Patching in U2F-Token auth for all services, see https://github.com/MarcSaric/pam-demos
 #
-auth	[success=2 default=ignore] 	pam_u2f.so authfile=/etc/u2f_keys
+auth	[success=2 default=ignore] 	pam_u2f.so authfile=/etc/u2f_keys cue
 # here are the per-package modules (the "Primary" block)
 auth	[success=1 default=ignore]	pam_unix.so nullok_secure try_first_pass
 # here's the fallback if no module succeeds
